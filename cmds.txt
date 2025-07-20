@@ -1,0 +1,26 @@
+1. rm -r                    |remove a dir|  06-07-2025
+2. mkd ir x1, x2, xn        |make multiple dirs|
+3. find . -name "x1"        |find where x1 dir or file located, the search start from the current dir(.)
+4. locate x2                |same as find but updatedb and mlocate (pkge that support updatedb cmd) must be check for|
+5. rpm -qa | grep mlocate   |check if mlocate pkg install|
+6. yum install mlocate      |install mlocate pkg|
+   sudo yum install mlocate  
+   rhc yum install mlocate 
+7. su -                      |to become the root user|
+8. find . - d                |See all the dirs
+
+9. sudo apt update && sudo at upgrade -y | update the system 20-07-2025
+10. Wildcards * ? {}
+
+10.1. rm *abc                |removes chars that start with abc|
+10.2.  touch abc{1..9}-xyz   |abc1-xyz --- abc9-xyz files are created|
+       touch ibrahim-0{1..9}
+10.3. ls -l *abc             |return or show any file starts abc|
+10.4. rm *abc*               |remove files that contain abc|
+10.5. ls -l ?bc*             |whatever the word start wih and bc follows|
+10.6  ls -l *[cd]*           |return all the files that has c or d |
+11. ln -s                    |hard link|
+12. ln                       |soft link|
+
+
+
