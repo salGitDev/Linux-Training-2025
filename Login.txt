@@ -1,1 +1,10 @@
-ssh -i ~/Downloads/my-linux-key-pair.pem ec2-user@3.254.152.247
+ssh -i ~/Downloads/my-linux-key-pair.pem ec2-user@34.240.107.150
+
+
+sudo yum update -y
+rhc amazon-linux-extras install epel -y
+rhc yum groupinstall "Xfce" -y
+rhc yum install tigervnc-server -y
+
+
+rhc vncserver
